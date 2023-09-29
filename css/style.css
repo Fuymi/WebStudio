@@ -1,0 +1,97 @@
+body {
+    font-family: Roboto;
+}
+.container{
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+.logo{
+    font-family: Raleway;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+}
+.nav-list-link{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0.02em;
+}
+.contacts-list-link{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0.02em;
+}
+.nav-list-link:hover,.contacts-list-link:hover{
+    color: rgba(33, 150, 243, 1);
+}
+.hero-title{
+        font-size: 44px;
+        font-weight: 900;
+        line-height: 1;
+        letter-spacing: 0.06em;
+}
+.hero-btn{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1,1;
+        letter-spacing: 0.06em;
+}
+.features-list-title{
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: 0.03em;
+}
+.features-list-text{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1,1;
+        letter-spacing: 0.03em;
+}
+.work-title{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1,2;
+        letter-spacing: 0.03em;
+}
+.team-title{
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1,2;
+        letter-spacing: 0.03em;
+}
+
+
+.section-hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.section-features{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section-work{
+    padding-bottom: 94px;
+}
+.section-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+
+.portfolio-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.filters-list{
+    margin-bottom: 30px;
+}
