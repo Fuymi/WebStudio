@@ -353,3 +353,39 @@ body {
 .portfolio-list-div{
    padding: 20px 24px;
 }
+
+.antena::before{
+   content: "";
+   background-image: url("/imeges/antena.png");
+   width: 270px;
+   height: 120px;
+   display: inline-block;
+   margin-bottom: 30px;
+}
+
+.clock::before{
+   content: "";
+   background-image: url("/imeges/clock.png");
+   width: 270px;
+   height: 120px;
+   display: inline-block;
+   margin-bottom: 30px;
+}
+
+.desctop::before{
+   content: "";
+   background-image: url("/imeges/desctop.png");
+   width: 270px;
+   height: 120px;
+   display: inline-block;
+   margin-bottom: 30px;
+}
+
+.astronaft::before{
+   content: "";
+   background-image: url("/imeges/astronaft.png");
+   width: 270px;
+   height: 120px;
+   display: inline-block;
+   margin-bottom: 30px;
+}
