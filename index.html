@@ -30,7 +30,6 @@
                     <ul class="nav-list">
                         <li class="nav-list-item"><a href="./index.html" class="nav-list-link">Студія</a></li>
                         <li class="nav-list-item"><a href="./portfolio.html" class="nav-list-link">Портфоліо</a></li> 
-                        
                         <li class="nav-list-item"><a href="" class="nav-list-link">Контакти</a></li>
                     </ul>
                 </nav>
@@ -60,7 +59,7 @@
         <section class="section-hero">
             <div class="container">
                 <h1 class="section-hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="section-hero-btn">Замовити послугу</button>
+                <button class="section-hero-btn" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <!--Особливості-->
@@ -393,9 +392,75 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-form-div">
+                <h6 class="footer-form-title">Підпишіться на розсилку</h6>
+                <form action="" class="footer-form">
+                    <input class="footer-form-input" type="email" name="user-email" placeholder="E-mail">
+                <button class="footer-form-btn" type="submit">
+                    Підписатися
+                    <svg class="footer-form-svg" width="24" height="24">
+                        <use href="./symbol-defs.svg#icon-send"></use>
+                    </svg>
+                </button>
+                </form>
+            </div>
         </div>
     </div>
 </footer>
+<div class="backdrop is-hidden" data-modal> 
+    <div class="modal">
+        <p class="hero-modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <button class="hero-modal-btn-close" data-modal-close>
+            <a href="" class="modal-btn-close-link">
+                <svg class="modal-btn-close-svg" width="11" height="11">
+                    <use href="./symbol-defs.svg#icon-x"></use>
+                </svg>
+            </a>
+        </button>
+        <form action="" class="hero-modal-form">
+            <lable class="hero-modal-lb-name">
+                Ім'я
+            <span class="modal-lb-span">
+                <input type="text" class="input-name" minlength="3" maxlength="10" required>
+                <svg class="modal-lb-svg" width="12" height="12">
+                    <use href="./symbol-defs.svg#icon-person"></use>
+                </svg>
+            </span>
+            </lable>
+            <lable class="hero-modal-lb-tel">
+                Телефон
+            <span class="modal-lb-span">
+                <input type="text" class="input-tel" pattern="^380\d{9}$" maxlength="12" required>
+                <svg class="modal-lb-svg" width="13" height="13">
+                    <use href="./symbol-defs.svg#icon-phone"></use>
+                </svg>
+            </span>
+            </lable>
+            <lable class="hero-modal-lb-email">
+                Пошта
+            <span class="modal-lb-span">
+                <input type="text" class="input-email">
+                <svg class="modal-lb-svg" width="15" height="12">
+                    <use href="./symbol-defs.svg#icon-email"></use>
+                </svg>
+            </span>
+            </lable>
+            <lable class="hero-modal-lb-comment">
+                Кометрар
+                <textarea class="modal-textarea" name="user-messege"></textarea>
+            </lable>
+            <lable class="hero-modal-lb-check">
+                <input class="input-comment" type="checkbox" name="user-privacy" required>
+                <span class="modal-span-privacy">
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="" class="modal-privacy-link">Умови договору</a>
+                </span>
+            </lable>
+            <button class="hero-modal-lb-btn" type="submit">Відправити</button>
+        </form>
+    </div>
+</div>
+<script src="./script.js"></script>
 </body>
 
 </html>
