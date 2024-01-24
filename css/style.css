@@ -29,7 +29,7 @@ body {
    font-weight: 700;
    line-height: 1.2;
    letter-spacing: 0.03em;
-   color: var(--accent-color);
+   color: var(--main-blue-color);
 }
 
 .header-logo{
@@ -540,6 +540,15 @@ body {
    padding: 6px;
    top: 14px;
    right: 14px;
+   width: 30px;
+   height: 30px;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 50px;
+   background-color: var(--main-white-color);
+}
+
+.hero-modal-btn-close:hover svg {
+   fill: var(--main-blue-color);
 }
 
 .hero-modal-form{
@@ -579,6 +588,12 @@ body {
    min-width: 448px;
    min-height: 138px;
    border: 1px solid rgba(33, 33, 33, 0.2);
+   padding-left: 16px;
+   padding-top: 12px;
+}
+
+input:focus+svg {
+   fill: var(--main-blue-color);
 }
 
 .hero-modal-lb-check{
