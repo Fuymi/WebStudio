@@ -1,6 +1,7 @@
 body {
    font-family: Roboto;
    font-size: 14px;
+   margin: 0 auto;
 }
 
 :root {
@@ -14,6 +15,12 @@ body {
    --team-background-color: rgba(245, 244, 250, 1);
    --second-page-container-bg: rgba(238, 238, 238, 1);
    --portfolio-line: rgba(236, 236, 236, 1);
+}
+
+:root {
+   --animate-duration: 1s;
+   --animate-delay: 1s;
+   --animate-repeat: 1;
 }
 
 .container {
@@ -30,6 +37,10 @@ body {
    line-height: 1.2;
    letter-spacing: 0.03em;
    color: var(--main-blue-color);
+}
+
+.header{
+   border-bottom: 1px solid var(--portfolio-line);
 }
 
 .header-logo{
@@ -67,7 +78,22 @@ body {
    line-height: 1;
    letter-spacing: 0.02em;
    color: var(--main-text-color);
+   position: relative;
 }
+
+.curent::after{
+   position: absolute;
+   content: "";
+   display: inline-block;
+   background-color: var(--main-blue-color);
+   width: 100%;
+   height: 4px;
+   border-radius: 2px;
+   top: 44px;
+   left: 0;
+}
+
+
 
 .contacts-list-link {
    font-weight: 500;
@@ -629,6 +655,10 @@ input:focus+svg {
    margin: 0 auto;
 }
 
+.hero-modal-lb-check:hover .input-comment{
+   color: var(--main-blue-color);
+}
+
 /* portfolio */
 
 .section-portfolio{
@@ -644,22 +674,24 @@ input:focus+svg {
 }
 
 .filters-list-item{
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1;
-      letter-spacing: 0.03em;
-      text-align: center;
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1;
+   letter-spacing: 0.03em;
+   text-align: center;
 }
 
 .filters-list-btn{
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 1;
-      letter-spacing: 0.03em;
-      text-align: center;
-      padding: 6px 22px;
-      background-color: var(--team-background-color);
-      color: var(--menu-nav);
+   font-size: 16px;
+   font-weight: 500;
+   line-height: 1;
+   letter-spacing: 0.03em;
+   text-align: center;
+   padding: 6px 22px;
+   background-color: var(--team-background-color);
+   color: var(--menu-nav);
+   padding: 6px 22px;
+   border-radius: 4px;
 }
 
 .filters-list-btn:hover{
@@ -676,25 +708,57 @@ input:focus+svg {
 .portfolio-list-item{
    border: 1px solid rgba(238, 238, 238, 1);
    width: calc((100% - 60px)/3);
+   outline: 1px solid var(--white-main-color);
+   /* box-sizing: content-box; */
+   position: relative;
+   text-decoration: none;
+   color: inherit;
 }
 
 .portfolio-list-title{
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 2;
-      letter-spacing: 0.06em;
-      margin-bottom: 4px;
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 2;
+   letter-spacing: 0.06em;
+   margin-bottom: 4px;
+   color: var(--menu-nav);
 }
 
 .portfolio-list-text{
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1;
-      letter-spacing: 0.03em;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 1.8;
+   letter-spacing: 0.03em;
 }
 
-.portfolio-list-div{
+.portfolio-list-link:hover .portfolio-list-subtext{
+   transform: translateY(0);
+}
+
+.portfolio-list-move{
    padding: 20px 24px;
+}
+
+.img-wrap{
+   position: relative;
+   overflow: hidden; 
+}
+
+.portfolio-list-subtext{
+   position: absolute;
+   top: 0;
+   padding-left: 24px;
+   padding-right: 24px;
+   padding-top: 63px;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 28px;
+   letter-spacing: 0.03em;
+   color: var(--main-white-color);
+   background-color: rgba(33, 150, 243, 0.9);
+   height: 100%;
+   transform: translateY(100%);
+   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .antena::before{
